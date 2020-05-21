@@ -1,0 +1,202 @@
+/* reset do css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  margin: 10px;
+  border: 11px solid white;
+  padding: 16px;
+  height: 140px;
+  width: 500px;
+  box-sizing: border-box;
+  box-shadow: -10px 10px 20px 4px black;
+  border-radius: 20px 00px 20px 00px;
+}
+
+body {
+    background-image:url('../img/fundo.jpg');
+    background-size: auto 400vh;
+    font-family:arial;
+    height: 100vh;
+    font-size: 20px;
+    color: white;
+  } 
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  @media (min-width: 600px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .menu ul {
+    display: flex;
+   justify-content: space-around; 
+  }
+  
+  .menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    z-index: 1;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+  }
+
+  .site-subtitle {
+    font-style: italic;
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .sobre,
+  .contato,
+  .portfolio {
+    padding: 2em;
+  }
+
+  @media (min-width: 1200px) {
+    .sobre,
+    .contato,
+    .portfolio {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .sobre h2,
+  .contato h2,
+  .portfolio h2 {
+    color: white;
+    margin-bottom: 2em;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .sobre p {
+    color: white;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: justify;
+  }
+
+  .sobre a {
+    background-color: white;
+    text-decoration: underline;
+  }
+
+  .sobre a:hover {
+    color: red;
+  }
+
+  .sobre .avatar {
+    float: left;
+    margin-right: 1em;
+  }
+
+  .sobre .avatar img {
+    border-radius: 50%;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 1em; 
+    justify-content: center;
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(2, 240px);
+    } 
+  }
+
+  @media (min-width: 760px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 240px);
+    } 
+  }
+
+  @media (min-width: 990px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(4, 240px);
+    } 
+  }
+
+  @media (min-width: 1088px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(5, 240px);
+    } 
+  }
+
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    transition: transform 500ms;
+  }
+
+  .img-portfolio:hover {
+    transform: scale(1.5);
+  }
+
+  .contato .icons {
+    text-align: center;
+  }
+
+  .contato a {
+      color: white;
+      font-size: 140px;
+      transition: text-shadow 1s;
+  }
+
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow:  -10px 10px 10px black;
+  }
